@@ -1,0 +1,54 @@
+@font-face {
+  font-family: Fillguy;
+  src: url(../../fonts/Fillguy.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#65b5ad, #634bce);
+  height: 100vh;
+  font-family: 'Fillguy', 'sans serif';
+  display: grid;
+  place-items: center;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.title {
+  color: #3c83b1;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 5px 5px 0 gray;
+}
+
+.btn {
+  background: #b300b3;
+  font-family: inherit;
+  font-size: 3rem;
+  border: 3px solid #800080;
+  border-radius: 0.25em;
+  padding: 0.25em 0.75em;
+  transition: background 0.3s, transform 0.3s;
+  animation: bottomToTop 500ms;
+
+  &:hover {
+    background: #e600e6;
+    transform: scale(1.25);
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}

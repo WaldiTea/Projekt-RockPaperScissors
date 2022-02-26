@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <section class="game-container">
+      <h1 id="title" class="title second-title">Rock-Paper-Scissors</h1>
+      <article id="content-wrapper" class="content-wrapper visible">
+        <h2 class="title sub-title">How many rounds?</h2>
+        <div class="button-wrapper">
+          <button class="btn round-btn" value="5" onclick="amountRounds(this.value)">5</button>
+          <button class="btn round-btn" value="10" onclick="amountRounds(this.value)">10</button>
+          <button class="btn round-btn" value="15" onclick="amountRounds(this.value)">15</button>
+          <button class="btn round-btn" value="20" onclick="amountRounds(this.value)">20</button>
+        </div>
+      </article>
+      <article id="game-content" class="game-content invisible">
+        <h2 class="title sub-title round-counter"><span id="rounds"></span>/<span id="set-rounds"></span></h2>
+        <div class="score-container">
+          <div class="player user">🙂</div>
+          <div class="score"><span id="score-user">0</span>:<span id="score-computer">0</span></div>
+          <div class="player computer">💻</div>
+        </div>
+        <div class="choices">
+          <span class="icon rock choose">✊🏼</span>
+          <span class="icon paper choose">🖐🏼</span>
+          <span class="icon scissor choose">✌🏼</span>
+        </div>
+        <p class="move-text">Make Your Move</p>
+        <a class="btn play-btn restart-btn" href="">Restart</a>
+      </article>
+    </section>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

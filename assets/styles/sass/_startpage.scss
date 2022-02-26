@@ -1,0 +1,37 @@
+@import "_keyframes.scss";
+
+.main-title-wrapper {
+  text-align: center;
+
+  .title.main-title {
+    font-size: 7rem;
+    animation: topToBottom 500ms;
+  }
+
+  .icon-wrapper {
+    font-size: 6rem;
+    margin: 6% 0;
+    animation: scaleInn 500ms;
+
+    .icon {
+      display: inline-block;
+    }
+
+    .rock {
+      animation: shaking 2s infinite;
+    }
+
+    .paper {
+      animation: shaking 1.75s infinite;
+    }
+
+    .scissor {
+      animation: shaking 2.5s infinite;
+    }
+  }
+
+  .btn.play-btn {
+    width: fit-content;
+    margin: auto;
+  }
+}

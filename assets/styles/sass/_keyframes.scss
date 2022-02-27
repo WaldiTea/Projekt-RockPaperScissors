@@ -8,16 +8,6 @@
   }
 }
 
-@keyframes scaleInn {
-  0% {
-    transform: scale(2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 @keyframes scaleOut {
   0% {
     transform: scale(0.5);
@@ -53,5 +43,65 @@
 
   75% {
     transform: rotate(-45deg);
+  }
+}
+
+@keyframes colorWin {
+  0%, 100% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: green;
+  }
+}
+
+@keyframes colorLoose {
+  0%, 100% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: red;
+  }
+}
+
+@keyframes colorDraw {
+  0%, 100% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: yellow;
+  }
+}
+
+@keyframes backgroundWin {
+  0%, 100% {
+    background: none;
+  }
+
+  50% {
+    background: green;
+  }
+}
+
+@keyframes backgroundLoose {
+  0%, 100% {
+    background: none;
+  }
+
+  50% {
+    background: red;
+  }
+}
+
+@keyframes backgroundDraw {
+  0%, 100% {
+    background: none;
+  }
+
+  50% {
+    background: yellow;
   }
 }

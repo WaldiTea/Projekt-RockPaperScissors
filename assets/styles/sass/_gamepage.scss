@@ -14,7 +14,7 @@
       color: #b62fb6;
       font-size: 3rem;
       margin: 5% 0;
-      animation: scaleInn 500ms;
+      animation: scaleOut 500ms;
     }
 
     .button-wrapper {
@@ -69,17 +69,24 @@
       }
     }
 
+    .gameplay {
+      font-size: 2rem;
+      margin-top: 5%;
+    }
+
     .choices {
       display: flex;
       justify-content: space-evenly;
 
       .choose {
+        background: none;
         width: 8rem;
         height: 8rem;
         font-size: 5rem;
         border: 5px solid #000;
         border-radius: 50%;
-        margin: 10% 0 5% 0;
+        padding-bottom: 10%;
+        margin: 5% 0;
         transition: transform 0.3s;
 
         &:hover {

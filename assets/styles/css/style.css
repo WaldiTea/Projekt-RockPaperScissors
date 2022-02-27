@@ -82,28 +82,6 @@ a {
   }
 }
 
-@-webkit-keyframes scaleInn {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scaleInn {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @-webkit-keyframes scaleOut {
   0% {
     -webkit-transform: scale(0.5);
@@ -186,6 +164,114 @@ a {
   }
 }
 
+@-webkit-keyframes colorWin {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: green;
+  }
+}
+
+@keyframes colorWin {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: green;
+  }
+}
+
+@-webkit-keyframes colorLoose {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+@keyframes colorLoose {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+@-webkit-keyframes colorDraw {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: yellow;
+  }
+}
+
+@keyframes colorDraw {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: yellow;
+  }
+}
+
+@-webkit-keyframes backgroundWin {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: green;
+  }
+}
+
+@keyframes backgroundWin {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: green;
+  }
+}
+
+@-webkit-keyframes backgroundLoose {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: red;
+  }
+}
+
+@keyframes backgroundLoose {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: red;
+  }
+}
+
+@-webkit-keyframes backgroundDraw {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: yellow;
+  }
+}
+
+@keyframes backgroundDraw {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: yellow;
+  }
+}
+
 .main-title-wrapper {
   text-align: center;
 }
@@ -199,8 +285,8 @@ a {
 .main-title-wrapper .icon-wrapper {
   font-size: 6rem;
   margin: 6% 0;
-  -webkit-animation: scaleInn 500ms;
-          animation: scaleInn 500ms;
+  -webkit-animation: scaleOut 500ms;
+          animation: scaleOut 500ms;
 }
 
 .main-title-wrapper .icon-wrapper .icon {
@@ -237,17 +323,6 @@ a {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-@keyframes scaleInn {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 
@@ -292,6 +367,60 @@ a {
   }
 }
 
+@keyframes colorWin {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: green;
+  }
+}
+
+@keyframes colorLoose {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+@keyframes colorDraw {
+  0%, 100% {
+    border-color: black;
+  }
+  50% {
+    border-color: yellow;
+  }
+}
+
+@keyframes backgroundWin {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: green;
+  }
+}
+
+@keyframes backgroundLoose {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: red;
+  }
+}
+
+@keyframes backgroundDraw {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: yellow;
+  }
+}
+
 .game-container {
   text-align: center;
 }
@@ -307,8 +436,8 @@ a {
   color: #b62fb6;
   font-size: 3rem;
   margin: 5% 0;
-  -webkit-animation: scaleInn 500ms;
-          animation: scaleInn 500ms;
+  -webkit-animation: scaleOut 500ms;
+          animation: scaleOut 500ms;
 }
 
 .game-container .content-wrapper .button-wrapper {
@@ -377,6 +506,11 @@ a {
   font-size: 4rem;
 }
 
+.game-container .game-content .gameplay {
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
 .game-container .game-content .choices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,12 +521,14 @@ a {
 }
 
 .game-container .game-content .choices .choose {
+  background: none;
   width: 8rem;
   height: 8rem;
   font-size: 5rem;
   border: 5px solid #000;
   border-radius: 50%;
-  margin: 10% 0 5% 0;
+  padding-bottom: 10%;
+  margin: 5% 0;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;

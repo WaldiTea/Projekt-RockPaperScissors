@@ -12,7 +12,7 @@
 body {
   background: radial-gradient(#65b5ad, #634bce);
   height: 100vh;
-  font-family: 'Fillguy', 'sans serif';
+  font-family: "Fillguy", "sans serif";
   display: grid;
   place-items: center;
 }
@@ -32,7 +32,7 @@ a {
 .btn {
   background: #b300b3;
   font-family: inherit;
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   border: 3px solid #800080;
   border-radius: 0.25em;
   padding: 0.25em 0.75em;
